@@ -1,3 +1,4 @@
+#include <stdio.h>
 int masDos(int x)
 {
     int localg = x + 2;
@@ -6,7 +7,7 @@ int masDos(int x)
 
 int porDos(int y)
 {
-    localf = masDos(y);
+    int localf = masDos(y);
     return localf;
 }
 
@@ -16,5 +17,6 @@ int main(void)
     int localmain = 11;
     localmain = porDos(masDos(localmain));    
     printf("valor final: %d\n", localmain);
+    
 
 }
